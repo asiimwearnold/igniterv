@@ -1,5 +1,14 @@
 {
   "expo": {
+    "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiYXNpaW13ZWFybm9sZCIsImEiOiJjbGRiaXM2ejMwMTB1M3JubWIzMHoyczI5In0.ODE60KyjYpMRqFn0ZLP1iw"
+        }
+      ]
+    ],
     "name": "igniterv",
     "slug": "igniterv",
     "version": "1.0.0",
@@ -24,10 +33,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.arnold23.igniterv"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d21c6cbd-6a9a-4682-a29a-e3daab2929a3"
+      }
     }
   }
 }
